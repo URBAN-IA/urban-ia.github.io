@@ -4,5 +4,6 @@
   "network-centrality.webp": "doc08 PDF page 5, slide 10",
   "triplet-training.webp": "10.5909/JBE.2025.30.2.159 Fig.4",
   "hnsw-retrieval.webp": "10.5909/JBE.2025.30.2.159 Fig.5",
-  "processing": "WebP encoding only; figure content and proportions preserved"
+  "processing": "WebP encoding only; figure content and proportions preserved",
+  "localization": "English text overlays in SVG; original JPEG image bytes embedded unchanged. Only text regions are covered. Generative drafts rejected because they changed research graphics."
 }
