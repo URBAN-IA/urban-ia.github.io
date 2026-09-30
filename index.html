@@ -9,7 +9,7 @@
   <meta property="og:description" content="Research on public transport networks, accessibility and spatial equity.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://urban-ia.github.io/">
-  <meta property="og:image" content="https://urban-ia.github.io/urban-model.webp">
+  <meta property="og:image" content="https://urban-ia.github.io/national-transport.webp">
   <title>Baekchan Jeon | Urban & Transport Research</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="data:,">
@@ -19,7 +19,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header wrap">
   <a class="wordmark" href="#main">Baekchan Jeon<span lang="ko">전백찬</span></a>
-  <nav aria-label="Main navigation"><a href="#research">Research</a><a href="#publications">Publications</a><a href="#experience">Projects</a><a href="#contact">Contact</a></nav>
+  <nav aria-label="Main navigation"><a href="#research">Research</a><a href="#gallery">Gallery</a><a href="#publications">Publications</a><a href="#experience">Projects</a><a href="#contact">Contact</a></nav>
   <button id="theme" type="button" aria-label="Switch color theme">Dark mode</button>
 </header>
 <main id="main">
@@ -30,7 +30,7 @@
       <p class="intro">I study public transport networks, accessibility and spatial equity at the University of Seoul.</p>
       <a class="primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a>
     </div>
-    <figure class="hero-figure"><img src="urban-model.webp" alt="Conceptual paper model of a city connected by roads, railway corridors and bridges across a river" width="1536" height="1024" fetchpriority="high"><figcaption>AI-generated conceptual illustration; not a research map.</figcaption></figure>
+    <figure class="hero-figure"><a href="national-transport.webp" aria-label="Open national transport network map at full size"><img src="national-transport.webp" alt="Map of South Korea showing the national interregional public transport network" width="992" height="1265" fetchpriority="high"></a><figcaption>National interregional public transport network.<br>Jeon &amp; Kang, 2025 regional transport presentation, slide 2. <a href="#gallery">Research gallery ↗</a></figcaption></figure>
   </section>
   <section class="about wrap" aria-labelledby="about-title">
     <div><h2 id="about-title">About</h2><p class="small">University of Seoul<br>Urban Planning and Design</p></div>
@@ -43,6 +43,21 @@
       <div class="research-secondary"><article><h3>Spatial equity</h3><p>Examining geographic differences in transport connectivity and access to opportunities using grid-based population and economic data.</p></article><article><h3>Regional development</h3><p>Investigating relationships between public transport networks and economic activity in and around national innovation clusters.</p></article></div>
     </div>
     <p class="tools"><strong>Methods & tools</strong> Python, GeoPandas, graph-tool, Dask, GIS, high-performance computing and GPU acceleration.</p>
+  </section>
+  <section id="gallery" class="gallery wrap" aria-labelledby="gallery-title">
+    <p class="eyebrow">Selected research visuals</p><h2 id="gallery-title">Research gallery</h2>
+    <p class="gallery-intro">Figures from my research papers and conference presentations. Select an image to view it at full resolution.</p>
+    <h3>Transport networks &amp; spatial analysis</h3>
+    <div class="gallery-grid">
+      <figure><a href="network-structure.webp" aria-label="Open multimodal network structure at full size"><img src="network-structure.webp" width="4000" height="2250" loading="lazy" alt="Multimodal network diagram showing railway, intercity bus, aviation and maritime layers"></a><figcaption><h4>Connecting transport modes</h4><p>A structural view of how individual transport layers form an interconnected national network. Positions in this diagram represent a network layout.</p><p class="source">SOURCE · Jeon, B. &amp; Kang, M. (2025). Regional public transport connectivity presentation, slide 6 (PDF p. 3).</p></figcaption></figure>
+      <figure><a href="network-centrality.webp" aria-label="Open centrality comparison maps at full size"><img src="network-centrality.webp" width="4000" height="2250" loading="lazy" alt="South Korea maps comparing betweenness centrality on the left and eigenvector centrality on the right"></a><figcaption><h4>Different views of network importance</h4><p>Betweenness centrality highlights positions on shortest paths; eigenvector centrality reflects connections to other well-connected nodes. The maps illustrate spatial patterns; no numeric color scale is provided in the original.</p><p class="source">SOURCE · Jeon, B. &amp; Kang, M. (2025). Regional public transport connectivity presentation, slide 10 (PDF p. 5).</p></figcaption></figure>
+    </div>
+    <h3 class="gallery-group">AI &amp; image retrieval</h3>
+    <p class="gallery-intro">From representation learning to efficient search: class-informed triplet sampling and Hierarchical Navigable Small World (HNSW) indexing.</p>
+    <div class="gallery-grid ai-gallery">
+      <figure><a href="triplet-training.webp" aria-label="Open triplet learning diagram at full size"><img src="triplet-training.webp" width="1069" height="359" loading="lazy" alt="Swin Transformer v2 training workflow with positive, in-class negative and out-of-class negative samples"></a><figcaption><h4>Learning image representations</h4><p>A Swin Transformer v2 encoder learns embeddings through triplet loss, using an in-class to out-of-class negative sampling ratio of 4:6.</p><p class="source">SOURCE · So et al. (2025), <em>Journal of Broadcast Engineering</em>, 30(2), 159–169, Fig. 4. <a href="https://doi.org/10.5909/JBE.2025.30.2.159">Paper ↗</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/">CC BY-NC-ND 3.0</a>. Figure reproduced without content changes.</p></figcaption></figure>
+      <figure><a href="hnsw-retrieval.webp" aria-label="Open HNSW retrieval diagram at full size"><img src="hnsw-retrieval.webp" width="1137" height="403" loading="lazy" alt="Query image encoded into an embedding and matched to product images through HNSW search"></a><figcaption><h4>Retrieving similar products</h4><p>A query image is encoded into the learned embedding space. HNSW searches the indexed product embeddings and returns the top-K similar images.</p><p class="source">SOURCE · So et al. (2025), <em>Journal of Broadcast Engineering</em>, 30(2), 159–169, Fig. 5. <a href="https://doi.org/10.5909/JBE.2025.30.2.159">Paper ↗</a> · <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/">CC BY-NC-ND 3.0</a>. Figure reproduced without content changes.</p></figcaption></figure>
+    </div>
   </section>
   <section id="publications" class="publications wrap" aria-labelledby="publications-title">
     <h2 id="publications-title">Publications</h2>

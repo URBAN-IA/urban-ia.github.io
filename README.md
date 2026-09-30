@@ -9,7 +9,7 @@ Published address: https://urban-ia.github.io/
 - `index.html`: biography, publications, presentations, projects and education.
 - `style.css`: responsive layout and light/dark theme.
 - `theme.js`: accessible theme toggle; no tracking or third-party scripts.
-- `urban-model.webp`: AI-generated conceptual illustration, not an empirical research map.
+- `national-transport.webp`: research map used as the hero image. Gallery image sources are recorded in `image-sources.json`.
 
 No build or package installation is required. To preview, run `python -m http.server 8000` in this directory, then open http://localhost:8000.
 
