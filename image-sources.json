@@ -5,5 +5,7 @@
   "triplet-training.webp": "10.5909/JBE.2025.30.2.159 Fig.4",
   "hnsw-retrieval.webp": "10.5909/JBE.2025.30.2.159 Fig.5",
   "processing": "WebP encoding only; figure content and proportions preserved",
-  "localization": "English text overlays in SVG; original JPEG image bytes embedded unchanged. Only text regions are covered. Generative drafts rejected because they changed research graphics."
+  "localization": "English text overlays in SVG; original JPEG image bytes embedded unchanged. Only text regions are covered. Generative drafts rejected because they changed research graphics.",
+  "jeonbuk-network.webp": "User supplied image; Jeon 2026 KPA presentation slide 16 Jeonbuk panel",
+  "economic-accessibility-30min.webp": "User supplied image; Yoon, Jeon & Kang 2025 KRDA Table 3 page 159, 1800-second panel"
 }
